@@ -1,0 +1,11 @@
+nodeLinker: hoisted
+
+blockExoticSubdeps: false
+
+allowBuilds:
+  electron: true
+  appdmg: true
+  macos-alias: true
+  fs-xattr: true
+
+minimumReleaseAge: 10080

@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags: [v*]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+        with:
+          cache: true
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm make
+      - name: Create release
+        uses: softprops/action-gh-release@v3
+        with:
+          draft: false
+          files: out/**/*.dmg
+          generate_release_notes: true

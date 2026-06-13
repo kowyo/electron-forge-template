@@ -1,0 +1,9 @@
+node_modules/
+.vite/
+out/
+dist/
+.pnpm-store/
+.env
+*.local
+.DS_Store
+*.log
