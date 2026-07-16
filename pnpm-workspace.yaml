@@ -1,6 +1,6 @@
 nodeLinker: hoisted
 
-blockExoticSubdeps: false
+blockExoticSubdeps: true
 
 allowBuilds:
   electron: true
