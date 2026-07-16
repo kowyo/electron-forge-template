@@ -8,4 +8,4 @@ allowBuilds:
   macos-alias: true
   fs-xattr: true
 
-minimumReleaseAge: 10080
+minimumReleaseAge: 1440
