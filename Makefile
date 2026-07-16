@@ -1,6 +1,6 @@
-.PHONY: check prepare build lint format type-check knip
+.PHONY: check prepare build lint format type-check test knip
 
-check: lint format type-check knip
+check: lint format type-check test knip
 
 prepare:
 	pnpm install
@@ -17,6 +17,9 @@ format:
 
 type-check:
 	pnpm run types:check
+
+test:
+	pnpm test
 
 knip:
 	pnpm knip
