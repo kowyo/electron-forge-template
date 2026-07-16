@@ -11,14 +11,14 @@ jobs:
   release:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
+      - uses: actions/checkout@v7.0.0
+      - uses: pnpm/action-setup@v6.0.9
         with:
           cache: true
       - run: pnpm install --frozen-lockfile
       - run: pnpm make
       - name: Create release
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v3.0.2
         with:
           draft: false
           files: out/**/*.dmg
