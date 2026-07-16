@@ -10,9 +10,6 @@ const config: ForgeConfig = {
     asar: true,
     appBundleId: "com.example.app",
     icon: "assets/icon",
-    extendInfo: {
-      LSUIElement: true,
-    },
     osxSign: {},
   },
   rebuildConfig: {},
