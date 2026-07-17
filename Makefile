@@ -4,7 +4,6 @@ check: lint format type-check test knip
 
 prepare:
 	pnpm install
-	bash scripts/setup-signing.sh
 
 build:
 	pnpm make
