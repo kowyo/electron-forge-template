@@ -9,3 +9,7 @@ allowBuilds:
   fs-xattr: true
 
 minimumReleaseAge: 1440
+
+updateConfig:
+  ignoreDependencies:
+    - "@types/node"
